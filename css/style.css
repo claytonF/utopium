@@ -1,25 +1,46 @@
 /* Responsive Full Background Image Using CSS
  * Tutorial URL: http://sixrevisions.com/css/responsive-background-image/
 */
-body {
+body, html {
   background-image: url(../images/background.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-color:#030000;
-  color:white;
-  font-family: 'Play', sans-serif;
-  text-align: center;
-  padding:150px 20% 20px 20%;
+  color:#000;
+  font-family: 'Georgia', serif;
+  font-size: 1.1em;
+  line-height: 2em;
+  text-align: left;
+  padding:0px;
+  margin: 0px;
 }
 a {
   color:#f8c799;
 }
+section {
+  width:100%;
+  background-color: #fff;
+  padding: 0px 20%;
+  box-sizing:border-box;
+}
 
+#intro {
+  position: absolute;
+  top: 100%;
+  left:0px;
+}
+
+.chapterNumber {
+  font-size:4em;
+}
 
 @media only screen and (max-width: 767px) {
   body {
     background-image: url(../images/background_mobile.jpg);
+  }
+  section {
+    padding:0px 5%;
   }
 }
