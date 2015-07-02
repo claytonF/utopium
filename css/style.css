@@ -3,7 +3,7 @@
 */
 body {
   
-  background-color:#000;
+  
   padding:0px;
   margin:0px;
   font-family: 'Georgia';
@@ -14,6 +14,9 @@ body {
 }
 a {
   color:#f8c799;
+}
+a.dark-link {
+  color:#444;
 }
 
 #home {
@@ -65,6 +68,11 @@ a {
   padding: 20px 0px 100px 0px;
 }
 
+.chapter {
+  max-width:480pt;
+  margin:auto;
+}
+
 .text-padding {
 padding: 20px 20%;
 }
@@ -79,7 +87,19 @@ padding: 20px 20%;
   float:left;
   margin: 1.4em 20px 20px 0;
 }
-
+.divider {
+  text-align: center;
+}
+ .download {
+  width: 100%;
+  padding: 10px;
+  background: #444;
+  text-align: center;
+}
+.download a {
+  
+  color: #fff
+}
 
 @media only screen and (max-width: 1024px) and (orientation: landscape) {
   #home {
@@ -119,8 +139,9 @@ padding: 20px 20%;
     display:block;
     margin: auto;
   }
-  .text-padding {
+  .text-padding, .chapter {
     padding: 20px 5%;
   }
+
 
 }
